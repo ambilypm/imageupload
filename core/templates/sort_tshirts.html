@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tshirts</title>
+</head>
+<body>
+<a href="{% url 'index' %}">Clear Filter</a><br>
+{% if product %}
+    {% for products in  product%}
+        <img src="{{ products.picture.url }}" >
+    {% endfor %}
+{% endif %}
+</body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Watches</title>
+</head>
+<body>
+<a href="{% url 'index' %}">Clear Filter</a><br>
+    {% for products in  product%}
+        <img src="{{ products.picture.url }}" >
+    {% endfor %}
+</body>
+</html>
